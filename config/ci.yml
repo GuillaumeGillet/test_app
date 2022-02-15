@@ -1,0 +1,24 @@
+---
+app_name: test_app
+aws:
+  ecr_url: '268324876595.dkr.ecr.eu-west-1.amazonaws.com'
+  aws_region: 'eu-west-1'
+  ecr_repository: 'test_app'
+git:
+  url: ''
+eks_clusters:
+  development:
+    cluster: 'eks-devices-api-dev-3'
+    value_file: 'values-dev.yaml'
+    namespace: 'probos-dashboard'
+  production:
+    cluster: 'probos-prod'
+    value_file: 'values.yaml'
+    namespace: 'probos-dashboard'
+docker:
+  image_name: test_app
+type:
+  dashboard:
+    deployment: probos-dashboard
+  worker:
+    deployment: probos-worker
