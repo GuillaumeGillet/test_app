@@ -5,7 +5,7 @@ aws:
   aws_region: 'eu-west-1'
   ecr_repository: 'test_app'
 git:
-  url: ''
+  url: 'git@github.com:GuillaumeGillet/test_app.git'
 eks_clusters:
   development:
     cluster: 'eks-devices-api-dev-3'
